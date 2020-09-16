@@ -5,3 +5,7 @@
   * [中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
   * [后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)
 
+* 大数运算
+  * [大数相乘](https://leetcode-cn.com/problems/multiply-strings/)
+* 回溯
+  * [全排列](https://leetcode-cn.com/problems/permutations/)
