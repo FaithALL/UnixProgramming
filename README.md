@@ -38,5 +38,5 @@
 
 * 带外数据`sockatmark`
 
-* 地址查询函数`getaddrinfo`、`getnameinfo`
+* 地址查询函数`getaddrinfo`、`freeaddrinfo`，`getnameinfo`
 
