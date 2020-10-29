@@ -8,6 +8,7 @@
   * 匿名管道`pipe`，命名管道(FIFO)`mkfifo`，UNIX域套接字
 * 文件I/O
   * 基本I/O：`open`，`read`，`write`，`lseek`，`close`，`dup2/dup`，`sync`，`fcntl`
+  * 高级I/O：分散读集中写`readv/writev`，存储映射`mmap/munmap`，linux零拷贝`sendfile/splice/tee`
   * 标准I/O
 * 文件其他操作
   * 获取文件信息：`stat`
