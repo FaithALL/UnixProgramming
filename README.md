@@ -18,6 +18,13 @@
   * 文件操作：`truncate`，`rename`(目录也适用)
   * 硬链接：`link`，`unlink`
   * 符号链接：`symlink`，`readlink`
+* 编程规范
+  * 日志：`syslog`，`openlog`，`setlogmask`，`closelog`
+  * 用户和组：真实用户`uid`，有效用户`euid`，真实组`gid`，有效组`egid`，设置用户/组ID
+  * 进程关系：进程组`pgid`，会话`sid`
+  * 资源限制：`getrlimit`
+  * 进程目录：`getcwd`，`chdir`，`chroot`
+  * 守护进程：`daemon`
 
 ### 网络编程
 
