@@ -48,4 +48,14 @@
   * 带外数据`sockatmark`
 
   * 地址查询函数`getaddrinfo`、`freeaddrinfo`，`getnameinfo`
+  
+* 服务器编程框架
+
+  * I/O处理单元
+    * 五种I/O模型：阻塞I/O、非阻塞I/O、信号驱动I/O、异步I/O、I/O多路复用(select、poll、epoll)
+    * 两种事件处理模式：Reactor、Proactor
+  * 逻辑单元
+    * 两种并发模式：半同步/半异步模式、领导者/追随者模式
+    * 高效逻辑处理方式：有限状态机
+  * 存储单元
 
