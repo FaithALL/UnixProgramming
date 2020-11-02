@@ -5,11 +5,26 @@
 ### 系统编程
 
 * 进程间通信：
+  
   * 匿名管道`pipe`，命名管道(FIFO)`mkfifo`，UNIX域套接字
+  
+* I/O复用
+  
+  > select poll轮询，epoll回调
+  >
+  > select poll索引就绪文件描述符复杂度为O(n)，epoll为O(1)
+  >
+  > epoll适用于连接数量多，活动连接少的情况
+  
+  * select
+  * poll
+  * epoll：`epoll_create`，`epoll_ctl`，`epoll_wait`
+  
 * 文件I/O
   * 基本I/O：`open`，`read`，`write`，`lseek`，`close`，`dup2/dup`，`sync`，`fcntl`
   * 高级I/O：分散读集中写`readv/writev`，存储映射`mmap/munmap`，linux零拷贝`sendfile/splice/tee`
   * 标准I/O
+  
 * 文件其他操作
   * 获取文件信息：`stat`
   * 访问权限：`access`，`umask`，`chmod`
@@ -18,6 +33,7 @@
   * 文件操作：`truncate`，`rename`(目录也适用)
   * 硬链接：`link`，`unlink`
   * 符号链接：`symlink`，`readlink`
+  
 * 编程规范
   * 日志：`syslog`，`openlog`，`setlogmask`，`closelog`
   * 用户和组：真实用户`uid`，有效用户`euid`，真实组`gid`，有效组`egid`，设置用户/组ID
