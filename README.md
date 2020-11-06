@@ -34,6 +34,12 @@
   * 硬链接：`link`，`unlink`
   * 符号链接：`symlink`，`readlink`
   
+* 信号
+
+  * 发送信号：`kill`
+  * 处理信号：`signal`，`sigaction`
+  * 信号集：`sigemptyset`，`sigfillset`，`sigaddset`，`sigdelset`，`sigismember`，`sigprocmask`，`sigpending`
+
 * 编程规范
   * 日志：`syslog`，`openlog`，`setlogmask`，`closelog`
   * 用户和组：真实用户`uid`，有效用户`euid`，真实组`gid`，有效组`egid`，设置用户/组ID
