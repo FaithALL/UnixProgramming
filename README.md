@@ -87,3 +87,7 @@
 >   * 发送/接收带外数据，用MSG_OOB标志的send/recv
 >   * 检测带外数据的两种方式：SIGURG信号，IO复用的异常事件
 >   * 带外数据的定位：`sockatmark`
+> * 三种定时方法
+>   * socket选项SO_RCVTIMEO和SO_SNDTIMEO
+>   * SIGALRM信号
+>   * I/O复用系统调用的超时参数
