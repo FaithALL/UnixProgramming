@@ -134,6 +134,7 @@ int main(int argc, char *argv[]) {
                 users[connfd].timer = timer;
                 timer_lst.add_timer(timer);
             } else if ((sockfd == pipefd[0]) && (events[i].events & EPOLLIN)) {
+                //处理信号
                 char signals[1024];
                 ret = recv(pipefd[0], signals, sizeof(signals), 0);
                 if (ret <= 0) continue;
