@@ -4,9 +4,17 @@
 
 ### 系统编程
 
-* 进程间通信：
+* 进程
   
-  * 匿名管道`pipe`，命名管道(FIFO)`mkfifo`，UNIX域套接字
+  * 创建`fork`
+  * 执行`exec`
+  * 销毁`wait/waitpid(SIGCHLD)`
+  * 进程间通信：
+    * 匿名管道`pipe`，命名管道(FIFO)`mkfifo`，UNIX域套接字`socketpair`
+    * System V IPC
+      * 信号量`semget`、`semop`、`semctl`
+      * 消息队列`msgget`、`msgsnd/msgrcv`、`msgctl`
+      * 共享内存`shmget`、`shmat/shmdt`、`shmctl`
   
 * I/O复用
   
