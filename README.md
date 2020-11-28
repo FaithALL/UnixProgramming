@@ -31,6 +31,7 @@
     * 屏障
     * POSIX信号量`sem_*`
   * 线程与信号`pthread_sigmask`、`sigwait`、`pthread_kill`
+  * 线程和进程`pthread_atfork`
 
 * I/O复用
   
