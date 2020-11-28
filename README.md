@@ -12,10 +12,26 @@
   * 进程间通信：
     * 匿名管道`pipe`，命名管道(FIFO)`mkfifo`，UNIX域套接字`socketpair`
     * System V IPC
-      * 信号量`semget`、`semop`、`semctl`
+      * 信号量`semget`、`semop`、`semctl` (还有一组POSIX信号量)
       * 消息队列`msgget`、`msgsnd/msgrcv`、`msgctl`
       * 共享内存`shmget`、`shmat/shmdt`、`shmctl`
   
+* 线程
+
+  * 线程模型：内核线程(LWP)、用户线程、双层调度
+  * 线程API
+    * 创建`pthread_create`
+    * 结束`pthread_exit`
+    * 回收`pthread_join`
+    * 取消`pthread_cancel`、`pthread_setcancelstate`、`pthread_setcanceltype`
+    * 线程属性`pthread_attr_init`、`pthread_attr_destroy`、`pthread_attr_*`
+  * 线程同步
+    * 互斥锁`pthread_mutex_*`、读写锁、自旋锁
+    * 条件变量`pthread_cond_*`
+    * 屏障
+    * POSIX信号量`sem_*`
+  * 线程与信号`pthread_sigmask`、`sigwait`、`pthread_kill`
+
 * I/O复用
   
   > select poll轮询，epoll回调
