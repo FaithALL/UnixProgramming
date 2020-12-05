@@ -14,7 +14,7 @@
     * System V IPC
       * 信号量`semget`、`semop`、`semctl` (还有一组POSIX信号量)
       * 消息队列`msgget`、`msgsnd/msgrcv`、`msgctl`
-      * 共享内存`shmget`、`shmat/shmdt`、`shmctl`
+      * 共享内存`shmget`、`shmat/shmdt`、`shmctl`(还有POSIX共享内存)
   
 * 线程
 
