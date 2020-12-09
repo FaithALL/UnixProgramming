@@ -94,7 +94,7 @@
 
   * 带外数据`sockatmark`
 
-  * 地址查询函数`getaddrinfo`、`freeaddrinfo`，`getnameinfo`
+  * 地址查询函数`getaddrinfo`、`freeaddrinfo`，`getnameinfo`，`getnameinfo`
   
 * 服务器编程框架
 
