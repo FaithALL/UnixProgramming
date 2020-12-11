@@ -21,6 +21,7 @@
   * 线程模型：内核线程、用户线程、双层调度
   * 线程API
     * 创建`pthread_create`
+    * 初始化`pthread_once`
     * 结束`pthread_exit`
     * 回收`pthread_join`
     * 取消`pthread_cancel`、`pthread_setcancelstate`、`pthread_setcanceltype`
