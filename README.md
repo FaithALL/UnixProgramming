@@ -11,10 +11,10 @@
   * 销毁`wait/waitpid(SIGCHLD)`
   * 进程间通信：
     * 匿名管道`pipe`，命名管道(FIFO)`mkfifo`，UNIX域套接字`socketpair`
-    * System V IPC
-      * 信号量`semget`、`semop`、`semctl` (还有一组POSIX信号量)
+    * System V IPC(还有一组POSIX接口，更易用)
+      * 信号量`semget`、`semop`、`semctl` 
       * 消息队列`msgget`、`msgsnd/msgrcv`、`msgctl`
-      * 共享内存`shmget`、`shmat/shmdt`、`shmctl`(还有POSIX共享内存)
+      * 共享内存`shmget`、`shmat/shmdt`、`shmctl`
     * 信号`kill`
   
 * 线程
