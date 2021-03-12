@@ -42,6 +42,7 @@
   > select poll索引就绪文件描述符复杂度为O(n)，epoll为O(1)
   >
   > epoll适用于连接数量多，活动连接少的情况
+  >
   
   * select
   * poll
@@ -66,6 +67,7 @@
   * 发送信号：`kill`
   * 处理信号：`signal`，`sigaction`
   * 信号集：`sigemptyset`，`sigfillset`，`sigaddset`，`sigdelset`，`sigismember`，`sigprocmask`，`sigpending`
+  * 信号的文件描述符：`signalfd`
 
 * 编程规范
   * 日志：`syslog`，`openlog`，`setlogmask`，`closelog`
@@ -114,7 +116,8 @@
 >   * 发送/接收带外数据，用MSG_OOB标志的send/recv
 >   * 检测带外数据的两种方式：SIGURG信号，IO复用的异常事件
 >   * 带外数据的定位：`sockatmark`
-> * 三种定时方法
+> * 四种定时方法
 >   * socket选项SO_RCVTIMEO和SO_SNDTIMEO
 >   * SIGALRM信号
 >   * I/O复用系统调用的超时参数
+>   * 时间文件化timerfd
