@@ -120,4 +120,4 @@
 >   * socket选项SO_RCVTIMEO和SO_SNDTIMEO
 >   * SIGALRM信号
 >   * I/O复用系统调用的超时参数
->   * 时间文件化timerfd
+>   * 时间文件化[timerfd](https://www.cnblogs.com/wenqiang/p/6698371.html)
