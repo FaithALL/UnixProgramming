@@ -10,11 +10,12 @@
   * 执行`exec`
   * 销毁`wait/waitpid(SIGCHLD)`
   * 进程间通信：
-    * 匿名管道`pipe`，命名管道(FIFO)`mkfifo`，UNIX域套接字`socketpair`
+    * 匿名管道`pipe`，命名管道(FIFO)`mkfifo`
     * System V IPC(还有一组POSIX接口，更易用)
       * 信号量`semget`、`semop`、`semctl` 
       * 消息队列`msgget`、`msgsnd/msgrcv`、`msgctl`
       * 共享内存`shmget`、`shmat/shmdt`、`shmctl`
+    * UNIX域套接字`socketpair`，`socket`
     * 信号`kill`
   
 * 线程
@@ -121,3 +122,7 @@
 >   * SIGALRM信号
 >   * I/O复用系统调用的超时参数
 >   * 时间文件化[timerfd](https://www.cnblogs.com/wenqiang/p/6698371.html)
+> * 常见信号含义
+>   * SIGCHLD：子进程终止时向父进程发送
+>   * SIGPIPE：进程向**读端被关闭的**管道或socket连接中写数据，默认杀死进程
+
