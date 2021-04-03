@@ -1,3 +1,6 @@
+/**
+ * System V共享内存，写
+ */
 #include <sys/ipc.h>
 #include <sys/shm.h>
 #include <unistd.h>
