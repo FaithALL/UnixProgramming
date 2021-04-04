@@ -1,4 +1,5 @@
 /**
+ * 共享内存三种方法，详见https://cloud.tencent.com/developer/article/1551288
  * System V共享内存，写
  */
 #include <sys/ipc.h>
