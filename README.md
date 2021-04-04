@@ -15,7 +15,7 @@
       * 信号量`semget`、`semop`、`semctl` 
       * 消息队列`msgget`、`msgsnd/msgrcv`、`msgctl`
       * 共享内存`shmget`、`shmat/shmdt`、`shmctl`
-    * UNIX域套接字`socketpair`，`socket`
+    * UNIX域套接字`socketpair/socket`，`socket`
     * 信号`kill`
   
 * 线程
