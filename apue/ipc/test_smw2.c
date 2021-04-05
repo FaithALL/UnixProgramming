@@ -12,7 +12,8 @@
 
 int main(){
     //打开/创建共享内存，可在/dev/shm下看到该文件
-    int fd = shm_open("posixsm", O_CREAT | O_RDWR, 0666);
+    //名字必须以/开头
+    int fd = shm_open("/posixsm", O_CREAT | O_RDWR, 0666);
     //截断
     ftruncate(fd, 0x400000);
 

@@ -12,6 +12,7 @@
 int main() {
 
     //打开或创建一个posix消息队列，可在/dev/mqueue看到该文件
+    //名字必须以/开头
     mqd_t mqd = mq_open("/posixmq", O_CREAT | O_RDWR, 0666, NULL);
 
     char buf[10240];

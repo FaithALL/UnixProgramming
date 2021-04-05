@@ -12,7 +12,8 @@
 
 int main(){
     //只读打开共享文件，可在/dev/shm下看到该文件
-    int fd = shm_open("posixsm", O_RDONLY, 0666);
+    //名字必须以/开头
+    int fd = shm_open("/posixsm", O_RDONLY, 0666);
     //截断
     ftruncate(fd, 0x400000);
 
@@ -24,7 +25,7 @@ int main(){
     munmap(p, 0x400000);
 
     //标记等待删除，当全部munmap时，删除
-    shm_unlink("posixsm");
+    shm_unlink("/posixsm");
 
     return 0;
 }
