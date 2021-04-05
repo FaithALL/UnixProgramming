@@ -11,7 +11,7 @@
   * 销毁`wait/waitpid(SIGCHLD)`
   * 进程间通信：
     * 匿名管道`pipe`，命名管道(FIFO)`mkfifo`
-    * System V IPC(还有一组POSIX接口，更易用)
+    * System V IPC(还有一组POSIX接口，更易用，可以参考`《TLPI》`)
       * 信号量`semget`、`semop`、`semctl` 
       * 消息队列`msgget`、`msgsnd/msgrcv`、`msgctl`
       * 共享内存`shmget`、`shmat/shmdt`、`shmctl`
