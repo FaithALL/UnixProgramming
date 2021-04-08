@@ -1,3 +1,6 @@
+/**
+ * System V 信号量(集)
+ */
 #include <stdio.h>
 #include <unistd.h>
 #include <sys/types.h>
