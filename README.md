@@ -29,7 +29,7 @@
     * 取消`pthread_cancel`、`pthread_setcancelstate`、`pthread_setcanceltype`
     * 线程属性`pthread_attr_init`、`pthread_attr_destroy`、`pthread_attr_*`
   * 线程同步
-    * 互斥锁`pthread_mutex_*`、读写锁、自旋锁
+    * 互斥锁`pthread_mutex_*`、读写锁`pthread_rwlock_*`、自旋锁`pthread_spin_*`
     * 条件变量`pthread_cond_*`
     * 屏障
     * POSIX信号量`sem_*`
